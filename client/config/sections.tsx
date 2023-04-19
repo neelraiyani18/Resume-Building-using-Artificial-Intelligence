@@ -86,13 +86,7 @@ export const left: SidebarSection[] = [
       />
     ),
   },
-  {
-    id: 'awards',
-    icon: <EmojiEvents />,
-    component: (
-      <Section type={'awards'} path="sections.awards" titleKey="title" subtitleKey="awarder" isEditable isHideable />
-    ),
-  },
+ 
   {
     id: 'certifications',
     icon: <CardGiftcard />,
@@ -107,20 +101,7 @@ export const left: SidebarSection[] = [
       />
     ),
   },
-  {
-    id: 'publications',
-    icon: <MenuBook />,
-    component: (
-      <Section
-        type={'publications'}
-        path="sections.publications"
-        titleKey="name"
-        subtitleKey="publisher"
-        isEditable
-        isHideable
-      />
-    ),
-  },
+  
   {
     id: 'skills',
     icon: <Architecture />,
@@ -128,27 +109,8 @@ export const left: SidebarSection[] = [
       <Section type={'skills'} path="sections.skills" titleKey="name" subtitleKey="level" isEditable isHideable />
     ),
   },
-  {
-    id: 'languages',
-    icon: <Language />,
-    component: (
-      <Section type={'languages'} path="sections.languages" titleKey="name" subtitleKey="level" isEditable isHideable />
-    ),
-  },
-  {
-    id: 'interests',
-    icon: <Sailing />,
-    component: (
-      <Section
-        type={'interests'}
-        path="sections.interests"
-        titleKey="name"
-        subtitleKey="keywords"
-        isEditable
-        isHideable
-      />
-    ),
-  },
+  
+  
   {
     id: 'volunteer',
     icon: <VolunteerActivism />,
