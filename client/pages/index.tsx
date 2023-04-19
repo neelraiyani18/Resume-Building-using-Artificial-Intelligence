@@ -8,7 +8,6 @@ import { Trans, useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Testimony from '@/components/landing/Testimony';
-import Footer from '@/components/shared/Footer';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import Logo from '@/components/shared/Logo';
 import { screenshots } from '@/config/screenshots';
@@ -125,22 +124,7 @@ const Home: NextPage = () => {
       </section>
 
       <section className={styles.section}>
-        <h6>{t<string>('landing.testimonials.heading')}</h6>
-
-        <p className="my-3">
-          <Trans t={t} i18nKey="landing.testimonials.body">
-            Good or bad, I would love to hear your opinion on Reactive Resume and how the experience has been for you.
-            <br />
-            Here are some of the messages sent in by users across the world.
-          </Trans>
-        </p>
-
-        <p className="my-3">
-          <Trans t={t} i18nKey="landing.testimonials.contact">
-            You can reach out to me through <a href="mailto:im.amruth@gmail.com">my email</a> or through the contact
-            form on <a href="https://www.amruthpillai.com">my website</a>.
-          </Trans>
-        </p>
+        
 
         <Masonry columns={{ xs: 1, sm: 2, lg: 4 }} spacing={2}>
           {testimonials.map(({ name, message }, index) => (
@@ -150,8 +134,6 @@ const Home: NextPage = () => {
       </section>
 
       <section className={styles.section}>
-        <h6>{t<string>('landing.links.heading')}</h6>
-
         
       </section>
 
@@ -161,9 +143,7 @@ const Home: NextPage = () => {
 
       <footer>
         <div className={styles.version}>
-          <Footer className="font-semibold leading-5 opacity-50" />
-
-          <div>v{process.env.appVersion}</div>
+          
         </div>
 
         <div className={styles.actions}>
