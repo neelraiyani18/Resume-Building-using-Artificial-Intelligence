@@ -72,11 +72,7 @@ const RightSidebar = () => {
             </section>
           ))}
 
-          <footer className={styles.footer}>
-            <Footer />
-
-            <div>v{process.env.appVersion}</div>
-          </footer>
+          
         </main>
       </div>
     </SwipeableDrawer>
