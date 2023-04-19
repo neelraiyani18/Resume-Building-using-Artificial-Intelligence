@@ -1,4 +1,4 @@
-import { DarkMode, LightMode, Link as LinkIcon } from '@mui/icons-material';
+import { DarkMode, LightMode } from '@mui/icons-material';
 import { Masonry } from '@mui/lab';
 import { Button, IconButton, NoSsr } from '@mui/material';
 import type { GetStaticProps, NextPage } from 'next';
@@ -20,7 +20,7 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setModalState } from '@/store/modal/modalSlice';
 import styles from '@/styles/pages/Home.module.scss';
 
-import { DIGITALOCEAN_URL, DOCS_URL, DONATION_URL, GITHUB_URL, REDDIT_URL } from '../constants';
+import {GITHUB_URL} from '../constants';
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
   props: {
@@ -152,55 +152,11 @@ const Home: NextPage = () => {
       <section className={styles.section}>
         <h6>{t<string>('landing.links.heading')}</h6>
 
-        <div>
-          <Link href="/meta/privacy" passHref>
-            <Button variant="text" startIcon={<LinkIcon />}>
-              {t<string>('landing.links.links.privacy')}
-            </Button>
-          </Link>
-
-          <Link href="/meta/service" passHref>
-            <Button variant="text" startIcon={<LinkIcon />}>
-              {t<string>('landing.links.links.service')}
-            </Button>
-          </Link>
-
-          <a href={GITHUB_URL} target="_blank" rel="noreferrer">
-            <Button variant="text" startIcon={<LinkIcon />}>
-              {t<string>('landing.links.links.github')}
-            </Button>
-          </a>
-
-          <a href={DOCS_URL} target="_blank" rel="noreferrer">
-            <Button variant="text" startIcon={<LinkIcon />}>
-              {t<string>('landing.links.links.docs')}
-            </Button>
-          </a>
-
-          <a href={REDDIT_URL} target="_blank" rel="noreferrer">
-            <Button variant="text" startIcon={<LinkIcon />}>
-              {t<string>('landing.links.links.reddit')}
-            </Button>
-          </a>
-
-          <a href={DONATION_URL} target="_blank" rel="noreferrer">
-            <Button variant="text" startIcon={<LinkIcon />}>
-              {t<string>('landing.links.links.donate')}
-            </Button>
-          </a>
-        </div>
+        
       </section>
 
       <section className={styles.section}>
-        <a href={DIGITALOCEAN_URL} target="_blank" rel="noreferrer">
-          <Image
-            src={`/images/sponsors/${theme == 'dark' ? 'digitalocean' : 'digitaloceanLight'}.svg`}
-            style={{ width: 200, height: 40, objectFit: 'contain' }}
-            alt="Powered By DigitalOcean"
-            width={200}
-            height={40}
-          />
-        </a>
+        
       </section>
 
       <footer>
