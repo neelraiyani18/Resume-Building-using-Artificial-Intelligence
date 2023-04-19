@@ -21,7 +21,7 @@ import WrapperRegistry from '@/wrappers/index';
 const App = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>
     <Head>
-      <title>Reactive Resume | A free and open source resume builder</title>
+      <title> Resume Building Using AI | A Project by Neel Raiyani</title>
 
       <meta
         name="description"
