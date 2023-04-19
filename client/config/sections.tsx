@@ -167,11 +167,7 @@ export const right: SidebarSection[] = [
     icon: <Download />,
     component: <Export />,
   },
-  {
-    id: 'settings',
-    icon: <SettingsIcon />,
-    component: <Settings />,
-  },
+ 
   
 ];
 

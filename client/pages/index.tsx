@@ -19,7 +19,6 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setModalState } from '@/store/modal/modalSlice';
 import styles from '@/styles/pages/Home.module.scss';
 
-import {GITHUB_URL} from '../constants';
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
   props: {
@@ -96,10 +95,7 @@ const Home: NextPage = () => {
           <li>{t<string>('landing.features.list.export')}</li>
           <li>
             <Trans t={t} i18nKey="landing.features.list.more">
-              And a lot of exciting features,
-              <a href={`${GITHUB_URL}#features`} target="_blank" rel="noreferrer">
-                click here to know more
-              </a>
+              And a lot of exciting features
             </Trans>
           </li>
         </ul>

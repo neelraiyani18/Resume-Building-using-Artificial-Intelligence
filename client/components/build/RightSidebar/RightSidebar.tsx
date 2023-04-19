@@ -3,7 +3,6 @@ import capitalize from 'lodash/capitalize';
 import { useTranslation } from 'next-i18next';
 
 import Avatar from '@/components/shared/Avatar';
-import Footer from '@/components/shared/Footer';
 import { right } from '@/config/sections';
 import { setSidebarState } from '@/store/build/buildSlice';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
