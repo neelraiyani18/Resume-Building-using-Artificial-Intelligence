@@ -86,7 +86,7 @@ export const left: SidebarSection[] = [
       />
     ),
   },
- 
+  
   {
     id: 'certifications',
     icon: <CardGiftcard />,
@@ -109,22 +109,7 @@ export const left: SidebarSection[] = [
       <Section type={'skills'} path="sections.skills" titleKey="name" subtitleKey="level" isEditable isHideable />
     ),
   },
-  
-  
-  {
-    id: 'volunteer',
-    icon: <VolunteerActivism />,
-    component: (
-      <Section
-        type={'volunteer'}
-        path="sections.volunteer"
-        titleKey="organization"
-        subtitleKey="position"
-        isEditable
-        isHideable
-      />
-    ),
-  },
+
   {
     id: 'projects',
     icon: <Coffee />,
@@ -176,16 +161,7 @@ export const right: SidebarSection[] = [
     icon: <Palette />,
     component: <Theme />,
   },
-  {
-    id: 'css',
-    icon: <Style />,
-    component: <CustomCSS />,
-  },
-  {
-    id: 'sharing',
-    icon: <Share />,
-    component: <Sharing />,
-  },
+  
   {
     id: 'export',
     icon: <Download />,
@@ -196,11 +172,7 @@ export const right: SidebarSection[] = [
     icon: <SettingsIcon />,
     component: <Settings />,
   },
-  {
-    id: 'links',
-    icon: <LinkIcon />,
-    component: <Links />,
-  },
+  
 ];
 
 export const getSectionsByType = (sections: Record<string, SectionRecord>, type: SectionType): SectionRecord[] => {
